@@ -21,3 +21,8 @@ def getAdjs(inp):
     #return re.findall(r'[a-zA-Z0-9_]+y', inp) # the same thing
     #return re.findall(r'\w{1,}y', inp) # the same thing
 print getAdjs('the funny book was goofy')
+
+q= re.compile(r'\w+y')
+print q.findall('the funny book was goofy')
+r= re.findall(r'\w+y','the funny book was goofy')
+print r
